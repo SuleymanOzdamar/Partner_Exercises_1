@@ -37,6 +37,15 @@
         height: auto;
       }
 
+      .left, .right{
+        display: inline;
+      }
+
+      .right {
+        position: absolute;
+        right: 0;
+      }
+
       nav a:hover {
         background-color: gray;
       }
@@ -66,6 +75,9 @@
       .container h2{
         margin-bottom: 5px;
       }
+
+      /* Footer */ 
+
       footer{
         background-color: aliceblue;
         text-align: center;
@@ -74,6 +86,17 @@
         width: 100%;
       }
 
+      /* Responsive */
+
+      @media screen and (max-width:600px) {
+        .main {
+          width: 100%;
+        }
+
+        .side {
+          width: 100%;
+        }
+      }
 
     </style>
   </head>
@@ -88,9 +111,14 @@
     <!-- NavBar -->
 
     <nav>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
+      <div class="left">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+      <div class="right">
+        <a href="#">Link</a>
+      </div>
     </nav>
 
     <!-- Container -->
