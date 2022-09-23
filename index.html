@@ -1,75 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        /* Resetleme */   
+      /* Resetleme */
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        /* Header */
+      /* Header */
 
-        header{
-            text-align: center;
-            background-color: aliceblue;
-            padding: 20px 0;
-        }
+      header {
+        text-align: center;
+        background-color: aliceblue;
+        padding: 20px 0;
+      }
 
-        /* NavBar */
+      /* NavBar */
 
-        nav{
-            background-color: black;
-            width: 100%;
-        }
+      nav {
+        background-color: black;
+        width: 100%;
+        padding: 15px 0;
+      }
 
-        nav ul{
-            list-style-type: none;
-        }
+      nav a {
+        text-decoration: none;
+        color: wheat;
+        padding: 15px;
+        height: auto;
+      }
 
-        nav ul li{
-            display: inline-block;
-            margin: 20px;
-        }
+      nav a:hover {
+        background-color: gray;
+      }
 
-        nav ul li:hover{
-            background-color: gray;
-        }
+      /* Container */
 
-        nav ul li a{
-            text-decoration: none;
-            color: wheat;
-            padding: 10px;
-        }
+      .container{
+        width: 100%;
+        padding: 20px;
+      }
+      
+      .side{
+        float: left;
+        width: 25%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main{
+        float: left;
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container h2{
+        margin-bottom: 5px;
+      }
 
 
     </style>
-</head>
-<body>
-            <!-- Header -->
+  </head>
+  <body>
+    <!-- Header -->
 
     <header>
-        <h1>Header</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <h1>Header</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </header>
 
-            <!-- NavBar -->
+    <!-- NavBar -->
 
     <nav>
-        <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-        </ul>
-
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
     </nav>
 
-
-</body>
+    <div class="container">
+      <div class="side">
+        <h2>Side</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing.
+      </div>
+      <div class="main">
+        <h2>Main</h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facere
+        corrupti provident, earum a harum voluptatum vero ratione id! Accusamus
+        eligendi libero quam voluptatum ipsum doloribus expedita inventore
+        repellendus. Ad blanditiis saepe perspiciatis maiores dolores repellat
+        vero. Quaerat odit culpa doloribus pariatur, animi ullam nihil odio
+        repellendus ea, quam velit.
+      </div>
+      <div class="side">
+        <h2>Side</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing.
+      </div>
+    </div>
+  </body>
 </html>
