@@ -26,18 +26,26 @@
 
         nav{
             background-color: black;
-            color: wheat;
             width: 100%;
         }
 
         nav ul{
             list-style-type: none;
-            padding: 10px;
         }
 
         nav ul li{
-            display: inline;
+            display: inline-block;
             margin: 20px;
+        }
+
+        nav ul li:hover{
+            background-color: gray;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: wheat;
+            padding: 10px;
         }
 
 
@@ -55,9 +63,9 @@
 
     <nav>
         <ul>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
         </ul>
 
     </nav>
