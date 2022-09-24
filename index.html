@@ -13,7 +13,9 @@
         padding: 0;
         box-sizing: border-box;
       }
-
+      body{
+        background-color: antiquewhite;
+      }
       /* Header */
 
       header {
@@ -37,7 +39,8 @@
         height: auto;
       }
 
-      .left, .right{
+      .left,
+      .right {
         display: inline;
       }
 
@@ -51,34 +54,35 @@
       }
 
       /* Container */
+      .container {
+        margin-top: 10px;
+        padding: 20px;
+      }
 
-      .container{
+      .row{
         width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-      
-      .side{
-        float: left;
-        width: 25%;
-        padding: 20px;
-        text-align: center;
       }
 
-      .main{
-        float: left;
-        width: 50%;
-        padding: 20px;
-        text-align: center;
+      .column-75 {
+        width: 75%;
       }
 
-      .container h2{
-        margin-bottom: 5px;
+      .top, .bottom {
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(130, 130, 231);
       }
 
-      /* Footer */ 
+      img {
+        width: 100%;
 
-      footer{
+      }
+
+
+
+      /* Footer */
+
+      footer {
         background-color: aliceblue;
         text-align: center;
         padding: 30px;
@@ -88,7 +92,7 @@
 
       /* Responsive */
 
-      @media screen and (max-width:600px) {
+      @media screen and (max-width: 600px) {
         .main {
           width: 100%;
         }
@@ -97,7 +101,6 @@
           width: 100%;
         }
       }
-
     </style>
   </head>
   <body>
@@ -123,27 +126,43 @@
 
     <!-- Container -->
     <div class="container">
-      <div class="side">
-        <h2>Side</h2>
-        Lorem, ipsum dolor sit amet consectetur adipisicing.
-      </div>
-      <div class="main">
-        <h2>Main</h2>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facere
-        corrupti provident, earum a harum voluptatum vero ratione id! Accusamus
-        eligendi libero quam voluptatum ipsum doloribus expedita inventore
-        repellendus. Ad blanditiis saepe perspiciatis maiores dolores repellat
-        vero. Quaerat odit culpa doloribus pariatur, animi ullam nihil odio
-        repellendus ea, quam velit.
-      </div>
-      <div class="side">
-        <h2>Side</h2>
-        Lorem ipsum dolor sit, amet consectetur adipisicing.
+      <div class="row">
+        <div class="column-75">
+          <div class="top">
+            <h1>TITLE HEADING</h1>
+            <h3>Title description, Sep.24.2022</h3>
+            <img src="https://images.unsplash.com/photo-1663875928932-3bf9dba77e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+            <p>Some Text</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+              asperiores voluptatibus debitis rerum et quae aliquam eaque alias.
+              Rem, voluptatum?
+            </p>
+          </div>
+          <div class="bottom">
+            <h1>TITLE HEADING</h1>
+            <h3>Title description, Sep.24.2022</h3>
+
+              <img src="https://images.unsplash.com/photo-1663875928932-3bf9dba77e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+
+            <p>Some Text</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+              asperiores voluptatibus debitis rerum et quae aliquam eaque alias.
+              Rem, voluptatum?
+            </p>
+          </div>
+        </div>
+        <div class="column-25">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
     <!-- Footer -->
     <footer>
-        <p>Footer</p>
+      <p>Footer</p>
     </footer>
   </body>
 </html>
